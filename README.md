@@ -53,6 +53,7 @@ yarn dev
 
 ## Learning Context
 * ...spread operator + conditional base object property loading at theme level
+* introduce with css tool ==> [Pesticide][link]
 
 
 
@@ -64,3 +65,5 @@ yarn dev
 https://www.youtube.com/watch?v=wYpCWwD1oz0
 https://github.com/ed-roh/react-admin-dashboard
 -->
+
+[link]: https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi
