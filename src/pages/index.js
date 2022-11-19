@@ -1,4 +1,4 @@
-export { default as SideMenu } from './global/SideMenu';
+export { default as SidebarMenu } from './global/SidebarMenu';
 export { default as Topbar } from './global/Topbar';
 export { default as Geography } from './Geography';
 export { default as InputForm } from './InputForm';

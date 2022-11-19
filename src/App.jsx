@@ -1,7 +1,7 @@
+import { Bar, Calendar, Contacts, Dashboard, FAQ, Geography, InputForm, Invoices, Line, Pie, SidebarMenu, Team, Topbar } from './pages';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from '@mui/material'; // reset all default css
 import { ColorModeContext, useMode } from './styles/theme';
-import { Dashboard, SideMenu, Topbar } from './pages';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 const App = () => {
@@ -17,13 +17,26 @@ const App = () => {
         <BrowserRouter>
           <main className="app">
 
-            <SideMenu />
+            <SidebarMenu />
 
             <section className="content">
               <Topbar />
 
               <Routes>
                 <Route path="/" element={<Dashboard />} />
+
+                <Route path="/team" element={<Team />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/invoices" element={<Invoices />} />
+
+                <Route path="/form" element={<InputForm />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/calendar" element={<Calendar />} />
+                
+                <Route path="/bar" element={<Bar />} />
+                <Route path="/pie" element={<Pie />} />
+                <Route path="/line" element={<Line />} />
+                <Route path="/geography" element={<Geography />} />
               </Routes>
 
             </section>

@@ -1,6 +1,6 @@
 > 17 Nov 2022
 
-# React Admin Dashboard 
+# React Admin Dashboard | [Live Link][hostedLink]
 
 ## Technology used
 1. React - Vite
@@ -55,6 +55,7 @@ yarn dev
 * ...spread operator + conditional base object property loading at theme level
 * introduce with css tool ==> [Pesticide][link]
 * by array of object{text,icon}, construct side-menu
+* row-column material-ui layout data display...
 
 
 
@@ -65,7 +66,8 @@ yarn dev
 <!-- 
 https://www.youtube.com/watch?v=wYpCWwD1oz0
 https://github.com/ed-roh/react-admin-dashboard
+https://app.netlify.com/sites/react-adb-mui/deploys
 -->
 
 [link]: https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi
-
+[hostedLink]: https://react-adb-mui.netlify.app

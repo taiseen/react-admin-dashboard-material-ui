@@ -10,7 +10,7 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
-export const sideMenu = [
+export const sidebarMenu = [
     {
         title: 'Dashboard',
         icon: HomeOutlinedIcon,

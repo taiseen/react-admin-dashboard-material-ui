@@ -1,17 +1,21 @@
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { sideMenu } from '../../constants/sideMenu';
+import { sidebarMenu } from '../../constants/sidebarMenu';
+import { useLocation } from "react-router-dom";
 import { tokens } from "../../styles/theme";
 import { useState } from "react";
-import Item from "./Item";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import SidebarMenuItem from "./SidebarMenuItem";
 
 
-const SideMenu = () => {
+const SidebarMenu = () => {
+
+  const location = useLocation();
+  const urlPathName = location.pathname;
 
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [selected, setSelected] = useState("Dashboard");
+  const [selected, setSelected] = useState(urlPathName);
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -105,22 +109,20 @@ const SideMenu = () => {
 
           {/* 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 */}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-
             {
-              // console.log(menu);
-              sideMenu.map(menu =>
+              sidebarMenu.map(menu =>
                 menu.tag === 'divider'
                   ?
                   <Typography
-                    key={menu.title}
                     variant="h6"
+                    key={menu.title}
                     color={colors.grey[300]}
                     sx={{ m: "15px 0 5px 20px" }}
                   >
                     {menu.title}
                   </Typography>
                   :
-                  <Item
+                  <SidebarMenuItem
                     key={menu.title}
                     menu={menu}
                     selected={selected}
@@ -137,4 +139,4 @@ const SideMenu = () => {
   );
 };
 
-export default SideMenu;
+export default SidebarMenu;
