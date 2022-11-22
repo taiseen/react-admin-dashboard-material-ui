@@ -2,6 +2,7 @@
 
 # React Admin Dashboard | [Live Link][hostedLink]
 
+
 ## Technology used
 1. React
 2. Material UI 
@@ -12,12 +13,6 @@
 7. React-Pro-Sidebar
 
 
-```
-yarn create vite
-
-yarn dev
-```
-
 
 ### This application consists of 
 * Light & Dark Mode
@@ -27,6 +22,7 @@ yarn dev
 * Calendar Integration
 * FAQ Page
 * 4 Different Charts
+
 
 
 ## Learning Context
@@ -44,7 +40,8 @@ yarn dev
     * because Vite have some issus with full-calendar lib
 
 
-## Yarn base packages...
+
+## Yarn base packages/lib...
 |No | Packages Name                    | Description      |
 |---|----------------------------------|------------------|
 |01 |yarn add `react-router-dom`       | URL Navigation   |
@@ -70,15 +67,9 @@ yarn dev
 |21 |yarn add `@nivo/geo`              | [Nivo Chart][📈] 📈 |
 
 
-[mui]: https://mui.com/material-ui/getting-started/installation
-[📆]: https://fullcalendar.io
+
 [📈]: https://nivo.rocks
-
-<!-- 
-https://www.youtube.com/watch?v=wYpCWwD1oz0
-https://github.com/ed-roh/react-admin-dashboard
-https://app.netlify.com/sites/react-adb-mui/deploys
--->
-
-[link]: https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi
+[📆]: https://fullcalendar.io
 [hostedLink]: https://react-adb-mui.netlify.app
+[mui]: https://mui.com/material-ui/getting-started/installation
+[link]: https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi
