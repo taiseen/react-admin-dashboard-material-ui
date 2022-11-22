@@ -1,12 +1,12 @@
+import { Header, GeographyChart, ProgressCircle, LineChart, BarChart, StatBox } from "../components";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { mockTransactions } from "../constants/mockData";
+import { tokens } from "../styles/theme";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import EmailIcon from "@mui/icons-material/Email";
-import { Header, GeographyChart, ProgressCircle, LineChart, BarChart, StatBox } from "../components";
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
-import { mockTransactions } from "../constants/mockData";
-import { tokens } from "../styles/theme";
 
 
 const Dashboard = () => {
@@ -16,8 +16,10 @@ const Dashboard = () => {
 
   return (
     <Box m="20px">
+
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
+
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
         <Box>
@@ -34,6 +36,7 @@ const Dashboard = () => {
             Download Reports
           </Button>
         </Box>
+
       </Box>
 
       {/* GRID & CHARTS */}
@@ -43,7 +46,7 @@ const Dashboard = () => {
         gridAutoRows="140px"
         gap="20px"
       >
-        {/* ROW 1 */}
+        {/* 🟨🟨🟨🟨🟨🟨 ROW 1 🟨🟨🟨🟨🟨🟨 */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -63,6 +66,7 @@ const Dashboard = () => {
             }
           />
         </Box>
+
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -82,6 +86,7 @@ const Dashboard = () => {
             }
           />
         </Box>
+
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -101,6 +106,7 @@ const Dashboard = () => {
             }
           />
         </Box>
+
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -121,7 +127,7 @@ const Dashboard = () => {
           />
         </Box>
 
-        {/* ROW 2 */}
+        {/* 🟨🟨🟨🟨🟨🟨 ROW 2 🟨🟨🟨🟨🟨🟨 */}
         <Box
           gridColumn="span 8"
           gridRow="span 2"
@@ -162,6 +168,7 @@ const Dashboard = () => {
             <LineChart isDashboard={true} />
           </Box>
         </Box>
+
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -213,7 +220,7 @@ const Dashboard = () => {
           ))}
         </Box>
 
-        {/* ROW 3 */}
+        {/* 🟨🟨🟨🟨🟨🟨 ROW 3 🟨🟨🟨🟨🟨🟨 */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -240,6 +247,7 @@ const Dashboard = () => {
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
         </Box>
+
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -256,6 +264,7 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
+
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -273,6 +282,7 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
+
       </Box>
     </Box>
   );

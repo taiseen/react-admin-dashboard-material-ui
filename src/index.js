@@ -1,0 +1,18 @@
+import { ProSidebarProvider } from 'react-pro-sidebar';
+import ReactDOM from 'react-dom/client'
+import React from 'react'
+import App from './App'
+import './styles/index.css'
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+
+    <ProSidebarProvider>
+      <App />
+    </ProSidebarProvider>
+
+  </React.StrictMode>
+);

@@ -1,9 +1,8 @@
-// import '@fullcalendar/core/vdom'
-// import FullCalendar, { formatDate } from '@fullcalendar/react'; // calender component
-// import dayGridPlugin from '@fullcalendar/daygrid'; // plugins...
-// import timeGridPlugin from '@fullcalendar/timegrid'; // plugins...
-// import interactionPlugin from '@fullcalendar/interaction'; // plugins...
-// import listPlugin from "@fullcalendar/list"; // plugins...
+import FullCalendar, { formatDate } from '@fullcalendar/react'; // calender component
+import dayGridPlugin from '@fullcalendar/daygrid'; // plugins...
+import timeGridPlugin from '@fullcalendar/timegrid'; // plugins...
+import interactionPlugin from '@fullcalendar/interaction'; // plugins...
+import listPlugin from "@fullcalendar/list"; // plugins...
 import { Box, List, ListItem, ListItemText, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../styles/theme";
 import { Header } from "../../components";
@@ -74,11 +73,11 @@ const Calendars = () => {
                     primary={event.title}
                     secondary={
                       <Typography>
-                        {/* {formatDate(event.start, {
+                        {formatDate(event.start, {
                           year: "numeric",
                           month: "short",
                           day: "numeric",
-                        })} */}
+                        })}
                       </Typography>
                     }
                   />
@@ -92,7 +91,7 @@ const Calendars = () => {
         {/* 📆📅📆📅📆📅📆📅📆📅📆📅 CALENDAR 📆📅📆📅📆📅📆📅📆📅📆📅 */}
         <Box flex="1 1 100%" ml="15px">
 
-          {/* <FullCalendar
+          <FullCalendar
             height="75vh"
             editable={true}
             selectable={true}
@@ -125,7 +124,7 @@ const Calendars = () => {
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
             }}
-          /> */}
+          />
 
         </Box>
       </Box>

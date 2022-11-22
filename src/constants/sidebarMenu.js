@@ -17,7 +17,7 @@ export const sidebarMenu = [
         path: '/',
     },
     {
-        title: 'Data',
+        title: 'Info',
         tag: 'divider'
     },
     {
@@ -36,7 +36,7 @@ export const sidebarMenu = [
         path: '/invoices',
     },
     {
-        title: 'Interactions',
+        title: 'Inputs',
         tag: 'divider'
     },
     {

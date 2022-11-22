@@ -3,7 +3,7 @@
 # React Admin Dashboard | [Live Link][hostedLink]
 
 ## Technology used
-1. React - Vite
+1. React
 2. Material UI 
 3. Formik
 4. Yup
@@ -21,11 +21,28 @@ yarn dev
 
 ### This application consists of 
 * Light & Dark Mode
-* 4 different Charts
-* 3 different Data Table Pages
-* FAQ Page
-* Form Page  
+* Dashboard Summary
+* 3 Different Data Table Pages
+* User Input Form Page  
 * Calendar Integration
+* FAQ Page
+* 4 Different Charts
+
+
+## Learning Context
+* ...spread operator + conditional base object property loading at theme level
+* introduce with css tool ==> [Pesticide][link]
+* by array of object{text,icon}, construct side-menu
+* row-column material-ui layout data display...
+* usage of data-grid layout of material ui...
+* path name become selected menu item, after refresh also...
+* user input form validation checking...
+* phone number regex pattern from input string...
+* usage of full-calendar library...
+* usage of nivo chart system...
+* migrate experience from Vite to React, 
+    * because Vite have some issus with full-calendar lib
+
 
 ## Yarn base packages...
 |No | Packages Name                    | Description      |
@@ -51,19 +68,6 @@ yarn dev
 |19 |yarn add `@nivo/bar`              | [Nivo Chart][📈] 📈 |
 |20 |yarn add `@nivo/line`             | [Nivo Chart][📈] 📈 |
 |21 |yarn add `@nivo/geo`              | [Nivo Chart][📈] 📈 |
-
-
-## Learning Context
-* ...spread operator + conditional base object property loading at theme level
-* introduce with css tool ==> [Pesticide][link]
-* by array of object{text,icon}, construct side-menu
-* row-column material-ui layout data display...
-* usage of data-grid layout of material ui...
-* path name become selected menu item, after refresh also...
-* user input form validation checking...
-* phone number regex pattern from input string...
-
-
 
 
 [mui]: https://mui.com/material-ui/getting-started/installation

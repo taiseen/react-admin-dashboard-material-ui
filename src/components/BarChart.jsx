@@ -35,17 +35,17 @@ const BarChart = ({ isDashboard = false }) => {
                 },
                 legends: {
                     text: {
-                        fill: colors.grey[100],
+                        fill: colors.grey[500],
                     },
                 },
             }}
             keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
             indexBy="country"
-            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
             padding={0.3}
+            colors={{ scheme: "nivo" }}
             valueScale={{ type: "linear" }}
             indexScale={{ type: "band", round: true }}
-            colors={{ scheme: "nivo" }}
+            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
             defs={[
                 {
                     id: "dots",
