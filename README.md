@@ -40,15 +40,17 @@ yarn dev
 |08 |yarn add `@emotion/styled`        | [Material UI][mui] |
 |09 |yarn add `@mui/x-data-grid`       | [Material UI][mui] |
 |10 |yarn add `@mui/icons-material`    | [Material UI][mui] |
-|11 |yarn add `@fullcalendar/core`     | [Full Calendar][📆] 📆 |
-|12 |yarn add `@fullcalendar/daygrid`  | [Full Calendar][📆] 📆 |
-|13 |yarn add `@fullcalendar/timegrid` | [Full Calendar][📆] 📆 |
-|14 |yarn add `@fullcalendar/list`     | [Full Calendar][📆] 📆 |
-|15 |yarn add `@nivo/core`             | [Nivo Chart][📈] 📈 |
-|16 |yarn add `@nivo/pie`              | [Nivo Chart][📈] 📈 |
-|17 |yarn add `@nivo/bar`              | [Nivo Chart][📈] 📈 |
-|18 |yarn add `@nivo/line`             | [Nivo Chart][📈] 📈 |
-|19 |yarn add `@nivo/geo`              | [Nivo Chart][📈] 📈 |
+|11 |yarn add `@fullcalendar/core`       | [Full Calendar][📆] 📆 |
+|12 |yarn add `@fullcalendar/daygrid`    | [Full Calendar][📆] 📆 |
+|13 |yarn add `@fullcalendar/timegrid`   | [Full Calendar][📆] 📆 |
+|14 |yarn add `@fullcalendar/list`       | [Full Calendar][📆] 📆 |
+|15 |yarn add `@fullcalendar/interaction`| [Full Calendar][📆] 📆 |
+|16 |yarn add `@fullcalendar/react`      | [Full Calendar][📆] 📆 |
+|17 |yarn add `@nivo/core`             | [Nivo Chart][📈] 📈 |
+|18 |yarn add `@nivo/pie`              | [Nivo Chart][📈] 📈 |
+|19 |yarn add `@nivo/bar`              | [Nivo Chart][📈] 📈 |
+|20 |yarn add `@nivo/line`             | [Nivo Chart][📈] 📈 |
+|21 |yarn add `@nivo/geo`              | [Nivo Chart][📈] 📈 |
 
 
 ## Learning Context

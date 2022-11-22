@@ -2,10 +2,10 @@ import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettin
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import { Box, Typography, useTheme } from "@mui/material";
-import { mockDataTeam } from "../constants/mockData";
+import { mockDataTeam } from "../../constants/mockData";
 import { DataGrid } from "@mui/x-data-grid";
-import { tokens } from "../styles/theme";
-import { Header } from "../components";
+import { tokens } from "../../styles/theme";
+import { Header } from "../../components";
 
 
 const Team = () => {

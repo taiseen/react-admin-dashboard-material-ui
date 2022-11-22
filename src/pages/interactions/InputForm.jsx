@@ -1,7 +1,7 @@
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { inputFormFields } from '../constants/inputFormFields';
+import { inputFormFields } from '../../constants/inputFormFields';
 import { Box, Button, TextField } from "@mui/material";
-import { Header } from "../components";
+import { Header } from "../../components";
 import { Formik } from "formik";
 import * as yup from "yup";
 

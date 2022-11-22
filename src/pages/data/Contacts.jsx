@@ -1,8 +1,8 @@
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { mockDataContacts } from "../constants/mockData";
+import { mockDataContacts } from "../../constants/mockData";
 import { useTheme } from "@mui/material";
-import { tokens } from "../styles/theme";
-import { Header } from "../components";
+import { tokens } from "../../styles/theme";
+import { Header } from "../../components";
 import { Box } from "@mui/material";
 
 

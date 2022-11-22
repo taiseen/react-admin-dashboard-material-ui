@@ -36,7 +36,7 @@ export const sidebarMenu = [
         path: '/invoices',
     },
     {
-        title: 'Pages',
+        title: 'Interactions',
         tag: 'divider'
     },
     {
