@@ -10,23 +10,16 @@ const SidebarMenuItem = ({ menu, selected, setSelected }) => {
     const color = tokens(themes.palette.mode);
 
     return (
-        <Link to={menu.path} style={{ backgroundHover: color.primary[700] }}>
-            <MenuItem
-                icon={<menu.icon />}
-                active={selected === menu.path}
-                onClick={() => setSelected(menu.path)}
-                style={{
-                    color: color.primary[100],
-                    // padding: "5px 35px 5px 20px",
-                    // background: color.primary[600]
-                }}
-            >
-                <Typography>
-                    {menu.title}
-                </Typography>
+        <MenuItem
+            icon={<menu.icon />}
+            active={selected === menu.path}
+            onClick={() => setSelected(menu.path)}
+            style={{ color: color.primary[100] }}
+        >
+            <Typography>{menu.title}</Typography>
 
-            </MenuItem>
-        </Link >
+            <Link to={menu.path} />
+        </MenuItem>
     );
 };
 
