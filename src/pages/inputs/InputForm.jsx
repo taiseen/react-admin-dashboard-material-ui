@@ -1,46 +1,22 @@
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { checkoutSchema, initialValues } from "../../constants/inputFormValues";
 import { inputFormFields } from '../../constants/inputFormFields';
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, Button, TextField } from "@mui/material";
 import { Header } from "../../components";
 import { Formik } from "formik";
-import * as yup from "yup";
+
 
 
 const InputForm = () => {
 
   const isNonMobile = useMediaQuery("(min-width:600px)");
 
-  // initial input fields
-  const initialValues = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    contact: "",
-    address1: "",
-    address2: "",
-  };
-
-  // phone number input validation checking from string by regex pattern...
-  const phoneRegExp = /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
-
-
-  // user input validation logic for each input field 
-  const checkoutSchema = yup.object().shape({
-    firstName: yup.string().required("Required"),
-    lastName: yup.string().required("Required"),
-    email: yup.string().email("Invalid Email").required("Required"),
-    contact: yup
-      .string()
-      .matches(phoneRegExp, "Phone number is not valid")
-      .required("Required"),
-    address1: yup.string().required("Required"),
-    address2: yup.string().required("Required"),
-  });
-
-
   // user click | data send to server OR do some action...
-  const handleFormSubmit = (values) => {
-    console.log(values)
+  const handleFormSubmit = (values, onSubmitProps) => {
+
+    // 🧹🧹🧹 Form Fields are Reset by Formik lib...
+    onSubmitProps.resetForm()
+
     alert(
       Object.keys(values).map(key =>
         `\n${key.charAt().toUpperCase() + key.slice(1)} : ${values[key]}`

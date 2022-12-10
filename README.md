@@ -67,6 +67,68 @@
 |20 |yarn add `@nivo/line`             | [Nivo Chart][📈] 📈 |
 |21 |yarn add `@nivo/geo`              | [Nivo Chart][📈] 📈 |
 
+<br />
+
+## File & Folder Hierarchy
+
+```
+🟨
+src
+├── components
+|   ├── BarChart.jsx
+|   ├── GeographyChart.jsx
+|   ├── Header.jsx
+|   ├── index.js
+|   ├── LineChart.jsx
+|   ├── PieChart.jsx
+|   ├── ProgressCircle.jsx
+|   └── StatBox.jsx
+|
+├── constants
+|   ├── faq.js
+|   ├── inputFormFields.js
+|   ├── inputFormValues.js
+|   ├── mockData.js
+|   ├── mockGeoFeatures.js
+|   └── sidebarMenu.js
+|
+├── pages
+|   |   Dashboard.jsx
+|   |   index.js
+|   |
+|   ├── charts
+|   |   ├── Bar.jsx
+|   |   ├── Geography.jsx
+|   |   ├── Line.jsx
+|   |   └── Pie.jsx
+|   |
+|   ├── global
+|   |   ├── SidebarMenu.jsx
+|   |   ├── SidebarMenuItem.jsx
+|   |   └── Topbar.jsx
+|   |
+|   ├── info
+|   |   ├── Contacts.jsx
+|   |   ├── Invoices.jsx
+|   |   └── Team.jsx
+|   |
+|   └── inputs
+|       ├── Calendars.jsx
+|       ├── FAQ.jsx
+|       └── InputForm.jsx
+|
+├── styles
+|   ├── index.css
+|   └── theme.js
+|
+├── App.jsx
+└── index.js
+🟨
+```
+
+```
+tree /f
+```
 
 
 [📈]: https://nivo.rocks
