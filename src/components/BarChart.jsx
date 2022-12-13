@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material";
 import { tokens } from "../styles/theme";
 
 const BarChart = ({ isDashboard = false }) => {
+    
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 

@@ -85,12 +85,15 @@ src
 |   └── StatBox.jsx
 |
 ├── constants
+|   ├── contactsColumns.js
 |   ├── faq.js
 |   ├── inputFormFields.js
 |   ├── inputFormValues.js
+|   ├── invoicesColumns.js
 |   ├── mockData.js
 |   ├── mockGeoFeatures.js
-|   └── sidebarMenu.js
+|   ├── sidebarMenu.js
+|   └── teamColumns.js
 |
 ├── pages
 |   |   Dashboard.jsx
